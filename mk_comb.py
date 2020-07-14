@@ -123,7 +123,7 @@ for i in np.arange(len(calw_img)):
         cdat += d
 fits.writeto(out, cdat, h, overwrite=True)
 
-# os.system('rm -rfv alw*.fits')
+os.system('rm -rfv alw*.fits')
 
 
 # Printing the running time
