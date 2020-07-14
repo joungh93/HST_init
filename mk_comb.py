@@ -110,18 +110,18 @@ for i in np.arange(len(ufilt)):
 # Output: calw[FILTER].fits
 
 
-# ----- Creating the detection image  ----- #
-calw_img = glob.glob('calw*.fits')
-calw_img = sorted(calw_img)
+# # ----- Creating the detection image  ----- #
+# calw_img = glob.glob('calw*.fits')
+# calw_img = sorted(calw_img)
 
-cdat = np.zeros((ysize, xsize))
-out = 'calw_dtc.fits'
-for i in np.arange(len(calw_img)):
-    print("Creating the detection image...")
-    d, h = fits.getdata(calw_img[i], header=True, ext=0)
-    if (h['INSTRUME'] == 'ACS'):
-        cdat += d
-fits.writeto(out, cdat, h, overwrite=True)
+# cdat = np.zeros((ysize, xsize))
+# out = 'calw_dtc.fits'
+# for i in np.arange(len(calw_img)):
+#     print("Creating the detection image...")
+#     d, h = fits.getdata(calw_img[i], header=True, ext=0)
+#     if (h['INSTRUME'] == 'ACS'):
+#         cdat += d
+# fits.writeto(out, cdat, h, overwrite=True)
 
 os.system('rm -rfv alw*.fits')
 
