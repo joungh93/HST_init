@@ -13,18 +13,17 @@ import glob, os
 
 # ----- Initial science images ----- #
 
-
-# mk_fits.py
-sci_dir = 'Images/'
-sci_img = glob.glob(sci_dir+'*.fits')
+# Data structure & initial science images
+sci_dir = 'Images/'    # The directory including the drizzled images
+sci_img = glob.glob(sci_dir+'*.fits')    # The drizzled images
 sci_img = sorted(sci_img)
-flt_Ref = '606'
-num_Ref = '1'
+tmp_dir = 'temp/'    # The directory for saving source catalogs and regions
 
-# apply_sep0.py
-tmp_dir = 'temp/'
+# The reference image
+flt_Ref = '606'    # The reference filter for reprojecting & aligning
+num_Ref = '1'    # The image number of the reference image (Maybe you should check it visually!)
 
-# mk_comb.py
-pixscl = 0.05
-mch_tol = 2.0
-min_npoi = 10
+# Source matching parameters for aligning images
+pixscl = 0.05    # Pixel scale: arcsec/pix
+mch_tol = 2.0    # Matching tolerance [pix]
+min_npoi = 10    # Minimum point sources for applying transformation
