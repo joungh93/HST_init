@@ -39,5 +39,5 @@ run mk_comb.py
 
 
 ## Future works
-* The class in ``apply_sep0.py`` can be improved to give the same results from Source Extractor.
+* The class in ``apply_sep0.py`` can be improved to give more column information (i.e. MU_MAX) than now.
 :snail:
