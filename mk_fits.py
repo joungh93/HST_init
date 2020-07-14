@@ -111,9 +111,9 @@ for i in np.arange(len(filt)):
             os.system('cp -rpv '+ip.flt_Ref+'_'+ip.num_Ref+'.fits w'+ip.flt_Ref+'_'+ip.num_Ref+'.fits')
 # Output: w[FILTER]_[NUMBER].fits
 
-# for i in np.arange(len(filt)):
-#     flt_num = filt[i][1:4]
-#     os.system('rm -rfv '+flt_num+'_*.fits')
+for i in np.arange(len(filt)):
+    flt_num = filt[i][1:4]
+    os.system('rm -rfv '+flt_num+'_*.fits')
 
 
 # Printing the running time
