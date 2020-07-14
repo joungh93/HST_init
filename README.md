@@ -12,10 +12,10 @@ A sequence of Python codes for initial processing of the HST (Hubble Space Telsc
   * ``numpy >= 1.18.5``
   * ``pandas >= 1.0.5``
   * ``astropy >= 4.0.0``
-  * ``astroscrappy >= 1.0.5``
-  * ``astroalign >= 2.0.2``
-  * ``reproject >= 0.7.1``
-  * ``sep >= 1.0.3``
+  * ``astroscrappy >= 1.0.5`` ([Reference link](https://astroscrappy.readthedocs.io/en/latest/))
+  * ``astroalign >= 2.0.2`` ([Reference link](https://astroalign.readthedocs.io/en/latest/index.html))
+  * ``reproject >= 0.7.1`` ([Reference link](https://reproject.readthedocs.io/en/stable/))
+  * ``sep >= 1.0.3`` ([Reference link](https://sep.readthedocs.io/en/v1.0.x/))
 * [init_param.py](https://github.com/joungh93/HST_init/blob/master/init_param.py) is the initial configurations to run the tasks. (You can revise it!)
 
 
