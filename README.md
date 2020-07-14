@@ -34,7 +34,7 @@ run mk_fits.py
 run mk_comb.py
 ```
 * ``mk_fits.py`` scraps the cosmic rays in the drizzled images, and reprojects their WCS information with respect to the reference image that you declared in ``init_param.py``.
-* ``apply_sep0.py`` contains a class, named ``sep0``, that runs quick photometry with ``sep`` and gives the results of aperture photometry.
+* ``apply_sep0.py`` contains a class, named ``sep0``, that runs quick photometry with ``sep`` and gives the results of aperture photometry. The ``sep0`` class is imported in ``mk_comb.py``.
 * ``mk_comb.py`` matches the point sources of each image, and transforms the images to the aligned ones. After alignments, it combines each filter image.
 
 
