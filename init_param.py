@@ -14,7 +14,7 @@ import glob, os
 # ----- Initial science images ----- #
 
 # Data structure & initial science images
-sci_dir = 'Images/'    # The directory including the drizzled images
+sci_dir = '../Drizzled/'    # The directory including the drizzled images
 sci_img = glob.glob(sci_dir+'*.fits')    # The drizzled images
 sci_img = sorted(sci_img)
 tmp_dir = 'temp/'    # The directory for saving source catalogs and regions
