@@ -33,7 +33,11 @@ ipython
 run mk_fits.py
 run mk_comb.py
 ```
+* ``mk_fits.py`` scraps the cosmic rays in the drizzled images, and reprojects their WCS information with respect to the reference image that you declared in ``init_param.py``.
+* ``apply_sep0.py`` contains a class, named ``sep0``, that runs quick photometry with ``sep`` and gives the results of aperture photometry.
+* ``mk_comb.py`` matches the point sources of each image, and transforms the images to the aligned ones. After alignments, it combines each filter image.
 
 
 ## Future works
+* The class in ``apply_sep0.py`` can be improved to give the same results from Source Extractor.
 :snail:
