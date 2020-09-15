@@ -40,6 +40,9 @@ class sep0:
         dat_sub = self.dat - self.backgr
         src = sep.extract(dat_sub, thresh, err=self.skysigma,
                           minarea=minarea, deblend_nthresh=db_nth, deblend_cont=db_cont)
+        src['theta'][src['theta'] < -np.pi/2.] = -np.pi/2. + 1.0e-7
+        src['theta'][src['theta'] > np.pi/2.] = np.pi/2. - 1.0e-7
+
         self.src = src
         self.nsrc = len(src)
         print(input_image+': {0:d} sources extracted.'.format(self.nsrc))
